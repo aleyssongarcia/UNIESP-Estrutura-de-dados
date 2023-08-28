@@ -1,4 +1,4 @@
-# Crie uma classe chamada “ContaBancaria” que tenha atributos “saldo” e “titular”. Implemente métodos “depositar” e “sacar” para manipular o saldo
+# 4- Crie uma classe chamada “ContaBancaria” que tenha atributos “saldo” e “titular”. Implemente métodos “depositar” e “sacar” para manipular o saldo
 
 class ContaBancaria:
     def __init__(self, titular, saldo=0):

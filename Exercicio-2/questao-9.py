@@ -1,4 +1,4 @@
-# Crie uma classe chamada “Triangulo” com atributos “lado1”, “lado2” e “lado3”. Implemente um método chamado “calcular_perimetro” que retorna o perímetro do triângulo. 
+# 9- Crie uma classe chamada “Triangulo” com atributos “lado1”, “lado2” e “lado3”. Implemente um método chamado “calcular_perimetro” que retorna o perímetro do triângulo. 
 
 class Triangulo:
     def __init__(self, lado1, lado2, lado3):
