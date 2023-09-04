@@ -1,5 +1,5 @@
 import numpy as np
-# Criando o Objeto
+# Criando a Class
 class Listasequencial:
     def __init__(self, capacidade):
         self.capacidade = capacidade
@@ -34,15 +34,21 @@ class Listasequencial:
             for i in range(posicao, self.ultima_posicao):
                 self.valores[i] = self.valores[i + 1]
             self.ultima_posicao -= 1
+    
+    # ordenar
+    def ordenar(self):
+        self.valores[:self.ultima_posicao + 1] = np.sort(self.valores[:self.ultima_posicao + 1])
+
 
 #Criando objeto
 x=Listasequencial(5)
 #Imprimindo as infomações, inserindo, imprimindo e excluindo.
 x.insere(9)
 x.insere(5)
-x.insere(15)
 x.insere(25)
+x.insere(15)
 x.insere(55)
+x.ordenar()
 x.imprime()
 print(f'O Valor 25 está no index: ', x.pesquisar(25))
 x.excluir(5)
